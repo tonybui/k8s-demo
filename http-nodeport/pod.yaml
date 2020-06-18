@@ -1,0 +1,14 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: http
+  labels:
+    app: http
+  namespace: demo
+spec:
+  containers:
+    - name: http
+      image: httpd:latest
+      ports:
+        - containerPort: 80
